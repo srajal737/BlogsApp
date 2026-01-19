@@ -19,7 +19,7 @@ const BlogDetail = ({post}) => {
           {
             post.tags.map((tag,index)=>(
                 <NavLink className='hover:underline' key={index} to={`/tag/${tag.replaceAll(" ","-")}`}>
-                   <span  className='text-blue-800 font-semibold ml-2 underline cursor-pointer'>#{tag}</span>
+                   <span  className='text-blue-800 font-semibold ml-2 underline cursor-pointer'>#{tag} </span>
                 </NavLink>))
           }
         </div>
